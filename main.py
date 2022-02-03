@@ -1,11 +1,9 @@
-import random
-secret_number = str(random.randint(1,5))
-print("Pick a number between 1 to 5 ")
-while True:
-    res = input("Guess the number: ")
-    if res==secret_number:
-        print("You win")
-        break
-    else:
-        print ("You lose")
-        continue
+import numPicker
+#import socketExample
+import sys
+
+print("Version = ", sys.version_info)
+
+np = numPicker.NumPicker()
+np.secret()
+print( "DONE")
